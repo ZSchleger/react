@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ZSchleger/react/static/css/main.e6c13ad2.css",
-    "main.js": "/ZSchleger/react/static/js/main.b5ca4f11.js",
-    "static/js/787.1cf87682.chunk.js": "/ZSchleger/react/static/js/787.1cf87682.chunk.js",
-    "index.html": "/ZSchleger/react/index.html",
-    "main.e6c13ad2.css.map": "/ZSchleger/react/static/css/main.e6c13ad2.css.map",
-    "main.b5ca4f11.js.map": "/ZSchleger/react/static/js/main.b5ca4f11.js.map",
-    "787.1cf87682.chunk.js.map": "/ZSchleger/react/static/js/787.1cf87682.chunk.js.map"
+    "main.css": "/react/static/css/main.f855e6bc.css",
+    "main.js": "/react/static/js/main.63bea813.js",
+    "static/js/787.1cf87682.chunk.js": "/react/static/js/787.1cf87682.chunk.js",
+    "index.html": "/react/index.html",
+    "main.f855e6bc.css.map": "/react/static/css/main.f855e6bc.css.map",
+    "main.63bea813.js.map": "/react/static/js/main.63bea813.js.map",
+    "787.1cf87682.chunk.js.map": "/react/static/js/787.1cf87682.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.b5ca4f11.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.63bea813.js"
   ]
 }
