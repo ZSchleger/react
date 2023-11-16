@@ -15,7 +15,7 @@ export const imageList = [{
     src: _stratRG,
     alt: 'The sculpture depicting a human head seems ever-present and solemn. It radiates calm and serenity.'
 }, {
-    name: 'Moai',
+    name: 'Fender Jimmy Page Dragon Telecaster',
     src: _teleJP,
-    alt: 'Three monumental stone busts with the heads that are disproportionately large with somber faces.'
+    alt: 'Fender Jimmy Page Dragon Telecaster'
 }];
