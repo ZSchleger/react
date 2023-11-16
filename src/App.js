@@ -28,7 +28,7 @@ export default function Gallery() {
                 ({index + 1} of {imageList.length})
             </h3>
             <img
-                src={images.url}
+                src={images.src}
                 alt={images.alt}
             />
         </>
