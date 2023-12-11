@@ -1,36 +1,32 @@
-import { useState } from 'react';
-import { imageList } from './data.js';
+import './App.css';
 
-export default function Gallery() {
-    const [index, setIndex] = useState(0);
-    const [showMore, setShowMore] = useState(false);
-    const hasNext = index < imageList.length - 1;
+/* NAVBAR IMPORTS HERE; Skip if not doing a navbar */
+import Navbar from "./components/NavbarElements";
+import {
+    Routes,
+    Route, Router,
+} from "react-router-dom";
+/* ebb: Moved the BrowserRouter import to the main index.js */
 
-    function handleNextClick() {
-        if (hasNext) {
-            setIndex(index + 1);
-        } else {
-            setIndex(0);
-        }
-    }
+import Home from "./pages/Home";
+import Resume from "./pages/Resume";
+import Projects from "./pages/Projects";
 
 
-    let images = imageList[index];
+function App() {
     return (
-        <>
-            <button onClick={handleNextClick}>
-                Next
-            </button>
-            <h2>
-                <i>{images.name} </i>
-            </h2>
-            <h3>
-                ({index + 1} of {imageList.length})
-            </h3>
-            <img
-                src={images.src}
-                alt={images.alt}
-            />
-        </>
+        <div className="App">
+            {/* NAVBAR STUFF HERE (skip if not using) */ }
+
+            <Navbar />
+
+            <Routes>
+                <Route index element={<Home />}/>
+                <Route path="/Resume" element={<Resume />} />
+                <Route path="/Projects" element={<Projects />} />
+            </Routes>
+        </div>
     );
 }
+
+export default App;

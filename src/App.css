@@ -1,5 +1,47 @@
+body {
+  margin:2em;
+  color:black;}
+
+/* unvisited link */
+a:link {
+  color: peachpuff;
+}
+
+/* visited link */
+a:visited {
+  color: aqua;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+
+form {margin: 2em;
+  background-color:black;
+  color:palegoldenrod;
+  display:flex;
+  justify-content:space-evenly;}
+
+ul {display:flex;
+  justify-content:space-between;
+  margin:auto;
+  list-style-type: none;
+  overflow: hidden;
+
+}
+
+
+img {max-width:500px; width:90%;}
+
 .App {
-  text-align: center;
+  /*text-align: center; */
 }
 
 .App-logo {
