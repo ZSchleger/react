@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 import { imageList } from '../data.js';
 
 
@@ -25,6 +26,9 @@ export default function Gallery() {
         }
     }
 
+    function ButtonLink ({to,children}) {
+        return <Link to={to}><button>{children}</button></Link>
+    }
 
     let images = imageList[index];
     return (
@@ -42,6 +46,7 @@ export default function Gallery() {
             <h3>
                 ({index + 1} of {imageList.length})
             </h3>
+            <ButtonLink to={images.github}>GitHub</ButtonLink>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <iframe width="1200" height="600" title="WebsitePreview"
                         src={images.url}

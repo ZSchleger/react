@@ -12,10 +12,6 @@ a:visited {
   color: aqua;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
 
 /* selected link */
 a:active {
@@ -78,3 +74,17 @@ img {max-width:500px; width:90%;}
     transform: rotate(360deg);
   }
 }
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+

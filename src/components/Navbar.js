@@ -4,34 +4,31 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: black;
-  width:60%;
-  //height: 85px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  /*  padding: 0.2rem calc((100vw - 1000px) / 2); */
-  //z-index: 12;
+  border-bottom: 10px solid grey; 
 `;
 
 export const NavLink = styled(Link)`
   color: #808080;
-  //display: flex;
-  //align-items: center;
   text-decoration: none;
-  padding-right:3em;
-  //padding: 0 1rem;
-  height: 100%;
+  padding: 1em;
   cursor: pointer;
+  transition: color 0.3s, background 0.3s;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: black;
+    background: white;
+  }
+
   &.active {
     color: lavenderblush;
   }
-
 `;
 
-
-
-
 export const Bars = styled(FaBars)`
-  //display:none;
   color: #808080;
   display: block;
 
@@ -49,13 +46,6 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div` {
   display: flex;
   align-items: center;
-  //margin-right: -24px;
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-white-space: nowrap; */
-  //@media screen and (max-width: 768px) {
-  //    display: none;
+
 }
 `;
